@@ -47,6 +47,7 @@ struct ContentView: View {
     @State private var selectedQuote = ""
     
     var body: some View {
+        NavigationStack {
         VStack {
             HStack {
                 Text(formattedDate(currentDate))
@@ -59,23 +60,29 @@ struct ContentView: View {
             .padding(.top, 10)
             Spacer()
             ZStack {
-                
-                       Color.white.edgesIgnoringSafeArea(.all) // background color
+                Color.white.edgesIgnoringSafeArea(.all) // Full-screen background color
 
-                       Text(selectedQuote)
-                           .font(.title2)
-                           .foregroundColor(.black)
-                           .multilineTextAlignment(.center)
-                           .padding()
-                   }
-                   .onAppear {
-                       selectedQuote = quotes.randomElement() ?? ""
-                   }
+                Image("MindBloomflower") // Replace with your image asset name
+                    .resizable()
+                    .scaledToFit()
+                    .opacity(0.6) // Optional: makes sure it doesn't overpower the text
+                    .frame(maxWidth: 400, maxHeight: 400) // Adjust size as needed
+
+                Text(selectedQuote)
+                    .font(.title2)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding()
+            }
+            .onAppear {
+                selectedQuote = quotes.randomElement() ?? ""
+            }
+        
             Spacer()
            
-            NavigationStack {
+           
                 HStack {
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: Notes()) {
                         Image("NotesIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
@@ -85,7 +92,7 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: ContentView()) {
                         Image("HomeIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
@@ -95,7 +102,7 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: FutureFeatures()) {
                         Image("SettingsIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
