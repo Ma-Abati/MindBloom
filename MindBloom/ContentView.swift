@@ -80,37 +80,29 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    Button(action: {
-                        // your action here
-                    }) {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                         Image("CalendarIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    Button(action: {
-                        // your action here
-                    }) {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                         Image("HomeIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    Button(action: {
-                        // your action here
-                    }) {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                         Image("ToDoIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    Button(action: {
-                        // your action here
-                    }) {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                         Image("SettingsIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
                 }
             }
-            .padding(.bottom,20)
+           
         }
     }
     func formattedDate(_ date: Date) -> String {
