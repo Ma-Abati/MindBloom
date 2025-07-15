@@ -72,25 +72,45 @@ struct ContentView: View {
                        selectedQuote = quotes.randomElement() ?? ""
                    }
             Spacer()
-            HStack {
-                Button("Notes") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                Button("Calendar") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                Button("HomePage") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-            Button("To-do List") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-            Button("More") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+           
+            NavigationStack {
+                HStack {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("NotesIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    Button(action: {
+                        // your action here
+                    }) {
+                        Image("CalendarIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    Button(action: {
+                        // your action here
+                    }) {
+                        Image("HomeIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    Button(action: {
+                        // your action here
+                    }) {
+                        Image("ToDoIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    Button(action: {
+                        // your action here
+                    }) {
+                        Image("SettingsIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
                 }
             }
             .padding(.bottom,20)
-           
         }
     }
     func formattedDate(_ date: Date) -> String {
