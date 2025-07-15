@@ -72,24 +72,36 @@ struct ContentView: View {
                        selectedQuote = quotes.randomElement() ?? ""
                    }
             Spacer()
-            HStack {
-                Button("Notes") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                Button("Calendar") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                Button("HomePage") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-            Button("To-do List") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-            Button("More") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+           
+            NavigationStack {
+                HStack {
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("NotesIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("CalendarIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("HomeIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("ToDoIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        Image("SettingsIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70) // size of the image
+                    }
                 }
             }
-            .padding(.bottom,20)
            
         }
     }
