@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct FutureFeatures: View {
     let signatureColor = Color(red: 180 / 255, green: 202 / 255, blue: 223 / 255)
     
@@ -23,7 +21,7 @@ struct FutureFeatures: View {
                     .foregroundColor(.black)
                 Spacer()                    
                 
-                NavigationLink(destination: GpaCalculator) {
+                NavigationLink(destination: GpaCalculator()) {
                     Text("GPA Calculator")
                         .padding()
                         .frame(maxWidth: .infinity)
