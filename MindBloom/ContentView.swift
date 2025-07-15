@@ -65,7 +65,7 @@ struct ContentView: View {
                 Image("MindBloomflower") // Replace with your image asset name
                     .resizable()
                     .scaledToFit()
-                    .opacity(0.6) // Optional: makes sure it doesn't overpower the text
+                    .opacity(0.5) // Optional: makes sure it doesn't overpower the text
                     .frame(maxWidth: 400, maxHeight: 400) // Adjust size as needed
 
                 Text(selectedQuote)
