@@ -87,7 +87,7 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
                     }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: Calendar()) {
                         Image("CalendarIcon")
                             .resizable()
                             .frame(width: 70, height: 70) // size of the image
