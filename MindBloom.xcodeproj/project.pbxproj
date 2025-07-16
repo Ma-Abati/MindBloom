@@ -6,39 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		B82043E52E27ECE300CE1446 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82043E42E27ECE300CE1446 /* Oswald-Medium.ttf */; };
-		B82043E92E27F30700CE1446 /* LibertinusMath-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82043E82E27F30700CE1446 /* LibertinusMath-Regular.ttf */; };
-		B82043EB2E27F32100CE1446 /* LibertinusMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82043EA2E27F32100CE1446 /* LibertinusMono-Regular.ttf */; };
-		B82043ED2E27F33D00CE1446 /* GosentDEMO-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B82043EC2E27F33D00CE1446 /* GosentDEMO-Regular.otf */; };
-		B82043EF2E27F35800CE1446 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82043EE2E27F35800CE1446 /* Ubuntu-Italic.ttf */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		B820437E2E268BC200CE1446 /* MindBloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindBloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B82043E42E27ECE300CE1446 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
-		B82043E82E27F30700CE1446 /* LibertinusMath-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibertinusMath-Regular.ttf"; sourceTree = "<group>"; };
-		B82043EA2E27F32100CE1446 /* LibertinusMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibertinusMono-Regular.ttf"; sourceTree = "<group>"; };
-		B82043EC2E27F33D00CE1446 /* GosentDEMO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GosentDEMO-Regular.otf"; sourceTree = "<group>"; };
-		B82043EE2E27F35800CE1446 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B82043E72E27EEB600CE1446 /* Exceptions for "MindBloom" folder in "MindBloom" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B820437D2E268BC200CE1446 /* MindBloom */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B82043802E268BC200CE1446 /* MindBloom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B82043E72E27EEB600CE1446 /* Exceptions for "MindBloom" folder in "MindBloom" target */,
-			);
 			path = MindBloom;
 			sourceTree = "<group>";
 		};
@@ -58,7 +32,6 @@
 		B82043752E268BC200CE1446 = {
 			isa = PBXGroup;
 			children = (
-				B82043E32E27ECBD00CE1446 /* Font */,
 				B82043802E268BC200CE1446 /* MindBloom */,
 				B820437F2E268BC200CE1446 /* Products */,
 			);
@@ -70,18 +43,6 @@
 				B820437E2E268BC200CE1446 /* MindBloom.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B82043E32E27ECBD00CE1446 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				B82043EE2E27F35800CE1446 /* Ubuntu-Italic.ttf */,
-				B82043EC2E27F33D00CE1446 /* GosentDEMO-Regular.otf */,
-				B82043EA2E27F32100CE1446 /* LibertinusMono-Regular.ttf */,
-				B82043E82E27F30700CE1446 /* LibertinusMath-Regular.ttf */,
-				B82043E42E27ECE300CE1446 /* Oswald-Medium.ttf */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +109,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B82043E92E27F30700CE1446 /* LibertinusMath-Regular.ttf in Resources */,
-				B82043EF2E27F35800CE1446 /* Ubuntu-Italic.ttf in Resources */,
-				B82043E52E27ECE300CE1446 /* Oswald-Medium.ttf in Resources */,
-				B82043ED2E27F33D00CE1446 /* GosentDEMO-Regular.otf in Resources */,
-				B82043EB2E27F32100CE1446 /* LibertinusMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +253,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MindBloom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,7 +280,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MindBloom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
