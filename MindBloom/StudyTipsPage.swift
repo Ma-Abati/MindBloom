@@ -210,7 +210,7 @@ struct StudyTipsPage: View {
     }
 }
 
-// MARK: - Preview
+
 #Preview {
     StudyTipsPage()
 }

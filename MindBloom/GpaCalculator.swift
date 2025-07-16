@@ -40,6 +40,22 @@ struct GpaCalculator: View {
     let gradeOptions = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
 
     var body: some View {
+        HStack {
+            Text(formattedDate(Date()))
+                .font(.callout)
+                .foregroundColor(.black)
+
+            Spacer()
+
+            Text("MindBloom")
+                .font(.custom("LibertinusMath-Regular", size: 23))
+                .foregroundColor(.black)
+        }
+        .padding(.horizontal)
+        .padding(.top, 10)
+        .zIndex(1) // Keeps it above background if needed
+
+        
         NavigationView {
             VStack {
                 ScrollView {

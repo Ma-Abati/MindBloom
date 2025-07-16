@@ -48,7 +48,10 @@ struct QuestionAnswer: View {
     let question: String
     let answer: String
     
+   
+    
     var body: some View {
+        
         VStack(alignment: .leading, spacing: 3) {
             Text(question)
                 .font(.body)
@@ -58,11 +61,15 @@ struct QuestionAnswer: View {
                 .font(.body)
                 .foregroundColor(.black)
                 .fixedSize(horizontal: false, vertical: true)
+            
         }
+        
     }
+    
 }
 
 struct AboutUs_View: View {
+    
     // Pastel colors for each creator's box
     let boxColors: [String: Color] = [
         "Maia F. Abati": Color(fromHexString: "#FFF9D6"),     // light yellow pastel
@@ -142,7 +149,7 @@ struct AboutUs_View: View {
     }
 }
 
-// MARK: - Preview
+
 #Preview {
     AboutUs_View()
 }

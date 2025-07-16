@@ -7,10 +7,27 @@
 
 import SwiftUI
 
+
 struct FutureFeatures: View {
     let signatureColor = Color(red: 180 / 255, green: 202 / 255, blue: 223 / 255)
     
     var body: some View {
+        HStack {
+            Text(formattedDate(Date()))
+                .font(.callout)
+                .foregroundColor(.black)
+
+            Spacer()
+
+            Text("MindBloom")
+                .font(.custom("LibertinusMath-Regular", size: 23))
+                .foregroundColor(.black)
+        }
+        .padding(.horizontal)
+        .padding(.top, 10)
+        .zIndex(1) // Keeps it above background if needed
+
+        
         NavigationStack {
       
             VStack(spacing: 20) {
@@ -34,7 +51,7 @@ struct FutureFeatures: View {
                         .foregroundColor(.black)
                 }
                 
-                NavigationLink(destination: Text("Destination")) {
+                NavigationLink(destination: BalanceCalculator()) {
                     Text("Study-Care Balance Calculator")
                         .padding()
                         .frame(maxWidth: .infinity)
