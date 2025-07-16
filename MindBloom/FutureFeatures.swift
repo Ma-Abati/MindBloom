@@ -15,11 +15,14 @@ struct FutureFeatures: View {
       
             VStack(spacing: 20) {
                 
-                Text("🌟 More Features 🌟")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundColor(.black)
-                Spacer()                    
+                Text("More Features 🌟")
+                       .font(.custom("LibertinusMath-Regular", size: 50))
+                       .bold()
+                       .foregroundColor(.black)
+                       .multilineTextAlignment(.center)
+                       .padding(.top, 40) // adjust this number as needed
+
+                   Spacer()
                 
                 NavigationLink(destination: GpaCalculator()) {
                     Text("GPA Calculator")

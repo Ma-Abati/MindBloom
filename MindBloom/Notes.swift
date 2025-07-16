@@ -27,7 +27,7 @@ struct Notes: View {
     var body: some View {
         VStack(spacing: 16) {
             Text(" My Notes")
-                .font(.title)
+                .font(.custom("LibertinusMath-Regular",size: 30) )
                 .bold()
                 .foregroundColor(.black)
             

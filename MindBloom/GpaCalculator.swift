@@ -35,6 +35,7 @@ struct Course: Identifiable {
 struct GpaCalculator: View {
     @State private var courses: [Course] = [Course()]
     @State private var calculatedGPA: Double?
+    @State private var showCreditWarning = false
 
     let gradeOptions = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
 
@@ -78,6 +79,12 @@ struct GpaCalculator: View {
                     .padding(.top)
                 }
 
+                if showCreditWarning {
+                    Text("⚠️ Don’t forget to add your credits")
+                        .foregroundColor(.red)
+                        .padding(.bottom, 5)
+                }
+
                 HStack {
                     Button(action: {
                         courses.append(Course())
@@ -95,7 +102,13 @@ struct GpaCalculator: View {
                 }
 
                 Button(action: {
-                    calculatedGPA = calculateGPA()
+                    if courses.contains(where: { $0.credits.trimmingCharacters(in: .whitespaces).isEmpty }) {
+                        showCreditWarning = true
+                        calculatedGPA = nil
+                    } else {
+                        showCreditWarning = false
+                        calculatedGPA = calculateGPA()
+                    }
                 }) {
                     Text("Calculate GPA")
                         .font(.headline)
@@ -116,11 +129,14 @@ struct GpaCalculator: View {
 
                 Spacer()
             }
-            .navigationTitle("GPA Calculator")
+            .navigationBarItems(leading:
+                Text("GPA Calculator")
+                    .font(.custom("LibertinusMath-Regular", size: 40))
+            )
         }
     }
 
-    // MARK: - Delete Courses
+    // MARK: - Delete Course
     func deleteCourse(at offsets: IndexSet) {
         courses.remove(atOffsets: offsets)
     }
@@ -144,8 +160,7 @@ struct GpaCalculator: View {
 
     func convertGradeToPoint(_ grade: String) -> Double {
         switch grade {
-        case "A+": return 4.0
-        case "A": return 4.0
+        case "A+", "A": return 4.0
         case "A-": return 3.7
         case "B+": return 3.3
         case "B": return 3.0

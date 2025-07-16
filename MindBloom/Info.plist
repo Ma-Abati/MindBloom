@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict/>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Ubuntu-Italic.ttf</string>
+		<string>GosentDEMO-Regular.otf</string>
+		<string>LibertinusMono-Regular.ttf</string>
+		<string>LibertinusMath-Regular.ttf</string>
+		<string>Oswald-Medium.ttf</string>
+	</array>
+</dict>
+</plist>

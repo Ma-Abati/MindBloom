@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     let currentDate = Date()
     let quotes = [
+        "H",
+        "j",
         "Believe in yourself.",
         "Brains, beauty, both.",
         "Dream big. Start small.",
@@ -55,6 +57,8 @@ struct ContentView: View {
                     .foregroundColor(.black)
                 Spacer() // Push content to the left
                 Text("MindBloom")
+                    .font(.custom("LibertinusMath-Regular",size: 23) )
+            
             }
             .padding(.horizontal)
             .padding(.top, 10)
@@ -65,11 +69,12 @@ struct ContentView: View {
                 Image("MindBloomflower") // Replace with your image asset name
                     .resizable()
                     .scaledToFit()
-                    .opacity(0.5) // Optional: makes sure it doesn't overpower the text
+                    .opacity(0.4) // Optional: makes sure it doesn't overpower the text
                     .frame(maxWidth: 400, maxHeight: 400) // Adjust size as needed
 
                 Text(selectedQuote)
-                    .font(.title2)
+                    .font(.custom("LibertinusMath-Regular",size: 30) )
+                    .bold()
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .padding()
