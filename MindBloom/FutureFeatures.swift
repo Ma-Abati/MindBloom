@@ -32,7 +32,7 @@ struct FutureFeatures: View {
                 }
                 
                 NavigationLink(destination: Text("Destination")) {
-                    Text("Study-Care Balance")
+                    Text("Study-Care Balance Calculator")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(signatureColor)
