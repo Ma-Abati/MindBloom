@@ -11,6 +11,7 @@ struct ContentView: View {
     let currentDate = Date()
     let quotes = [
         "H",
+        "j",
         "Believe in yourself.",
         "Brains, beauty, both.",
         "Dream big. Start small.",
