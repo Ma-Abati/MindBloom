@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let currentDate = Date()
     let quotes = [
+        "H",
         "Believe in yourself.",
         "Brains, beauty, both.",
         "Dream big. Start small.",
