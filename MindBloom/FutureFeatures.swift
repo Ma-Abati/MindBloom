@@ -44,7 +44,7 @@ struct FutureFeatures: View {
                         .foregroundColor(.black)
                 }
                 
-                NavigationLink(destination: Text("Destination")) {
+                NavigationLink(destination: StudyTipsPage()) {
                     Text("Study Tips")
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -54,7 +54,7 @@ struct FutureFeatures: View {
                         .foregroundColor(.black)
                 }
                 
-                NavigationLink(destination: Text("Destination")) {
+                NavigationLink(destination: AboutUs_View()) {
                     Text("About Us")
                         .padding()
                         .frame(maxWidth: .infinity)

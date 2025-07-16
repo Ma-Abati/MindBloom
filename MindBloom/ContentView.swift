@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData 
 
 struct ContentView: View {
     let currentDate = Date()
     let quotes = [
-        "H",
-        "j",
         "Believe in yourself.",
         "Brains, beauty, both.",
         "Dream big. Start small.",
@@ -124,7 +123,8 @@ struct ContentView: View {
     
   
     }
-    
+
+
 
 #Preview {
     ContentView()
