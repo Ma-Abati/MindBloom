@@ -65,7 +65,7 @@ struct ToDo: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
                     Button(action: addTask) {
-                        Image(systemName: "plus.cicrcle.fill")
+                        Image(systemName: "plus.circle.fill")
                             .resizable()
                             .frame(width:32, height: 32)
                             .foregroundColor(signatureColor)
@@ -109,9 +109,9 @@ struct ToDo: View {
         selectedTask = nil
     }
 }
+
 #Preview {
-    let view = ToDo ()
-    return view
+    ToDo()
 }
 
 

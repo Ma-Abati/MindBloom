@@ -10,9 +10,22 @@
 		B820437E2E268BC200CE1446 /* MindBloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindBloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		24F7F8182E28AC8B004F965D /* Exceptions for "MindBloom" folder in "MindBloom" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B820437D2E268BC200CE1446 /* MindBloom */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B82043802E268BC200CE1446 /* MindBloom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				24F7F8182E28AC8B004F965D /* Exceptions for "MindBloom" folder in "MindBloom" target */,
+			);
 			path = MindBloom;
 			sourceTree = "<group>";
 		};
