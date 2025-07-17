@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		24F7F8182E28AC8B004F965D /* Exceptions for "MindBloom" folder in "MindBloom" target */ = {
+		B8D3735C2E29433900705EBD /* Exceptions for "MindBloom" folder in "MindBloom" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		B82043802E268BC200CE1446 /* MindBloom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				24F7F8182E28AC8B004F965D /* Exceptions for "MindBloom" folder in "MindBloom" target */,
+				B8D3735C2E29433900705EBD /* Exceptions for "MindBloom" folder in "MindBloom" target */,
 			);
 			path = MindBloom;
 			sourceTree = "<group>";
